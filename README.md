@@ -1,6 +1,6 @@
 # Ping Pong Game
 
-<img src="/images/diabetes.jpg" width="1000" height="300" />
+<img src="/images/cover.png" width="1000" height="300" />
 
 
 In healthcare field diagnose a problem early offer more chance for traitement and guerison in this project we apply machine learning techniques to predict whether a patient will develop diabetes within the next five years. Early detection and diagnosis of diabetes is that the early stages of diabetes are often non-symptomatic. People who are on the path to diabetes (also known as prediabetes) often do not know that they have diabetes until it is too late.
@@ -16,99 +16,64 @@ In healthcare field diagnose a problem early offer more chance for traitement an
 
 ## 1. Project Structure
 
-#### Data
-* ├── diabetes.csv
-* ├── cleaned_data.csv
-* ├── scaled_data.csv
-* ├── data_documentation.pdf
-#### analysis_and_training
-* ├── py_files
-* ├── 1_data_preprocessing
-* ├── 2_ML_model
-* ├── 3_DL_model
-* ├── helpers.py
-#### figures
-* ├── contains graph and figures
-#### models
-* ├── contains trained models
-#### images
-* ├── contains images used in this images
 
-##### environment
-##### requirements.txt
-##### gitignore
-##### report (pdf & ppt)
+#### images
+* ├── contains images
+
+##### app.py
+##### helpers.kv
 
 ## 2. Process
 
-* step1 :  Importing Packages
-* step2 :  Loading the data
-* step3 : Exploratory Data Analysis (EDA)
-* step4 : Data Preparation
-* step5 : Build and Train the model
-* step6 : Model prediction and Evaluation
-* step7 : Model Improvement
- + Hyperparameter Tuning, Features Selection and Features Ingeneering
-* step8 : Model Deployment
+* step1 : Install python and virtualenv
+* step2 : set virtual environment
+* step3 : install and import packages
 
 ## 3. How to run
 
 ### 3.1. CLONE PROJECT DIRECTORY
 
-+ $ git clonehttps://github.com/RekidiangData-S/p01ml_diabetes_prediction.git
-+ $ cd p01ml_diabetes_prediction
++ $ git clonehttps://github.com/Rekidiang2/kv_ping_pong.git
++ $ cd kv_ping_pong
 
 ### 3.2. CREATE & ACTIVATE VIRTUAL ENVIRONMENT
 
 #### 3.2.1. WITH PIP and VENV
 
 ##### (Windows) 
-+ $ python -m venv p01ml_venv 
-+ $ p01ml_venv\Scripts\activate (<= Activate virtual Environment)
++ $ python -m venv kv01_venv 
++ $ kv01_venv\Scripts\activate (<= Activate virtual Environment)
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
-+ Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name p01ml_venv --display-name "p01ml_kernel"
-+ $ jupyter notebook
++ $ python app.py
 
 ##### (MasOS || LINUX)
-+ $ python3 -m venv p01ml_venv 
-+ $ source p01ml_venv/bin/activate (<= Activate virtual Environment)  
++ $ python3 -m venv kv01_venv 
++ $ source kv01_venv/bin/activate (<= Activate virtual Environment)  
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
-+ Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name p01ml_venv --display-name "p01ml_kernel"
-+ $ jupyter notebook
++ $ python app.py
 
 
 #### 3.2.2. WITH CONDA
 
 + Verify if you have conda installed ($conda --version) if not go to [anconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) to download and install it
 
-+ $ conda env create -f environment.yml
-+ $ conda activate p01ml_venv (<= Activate virtual Environment)
++ $ conda create -n kv01_venv
++ $ conda activate kv01_venv (<= Activate virtual Environment)
 + $ conda deactivate  (<= Deactivate virtual Environment)
-+ Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name p01ml_venv --display-name "p01ml_kernel"
-+ $ jupyter notebook
-+ Go to Kernel -> Change kernel -> p01ml_kernel
-+ $ jupyter kernelspec list (<= list all ipykernel in your system)
-+ $ jupyter kernelspec uninstall p01ml_venv (<= Delete the ipykernel in your system)
-
-
-#### Manage kernel
-+ $ jupyter kernelspec list (<= list all ipykernel in your system)
-+ $ jupyter kernelspec uninstall p01ml_venv (<= Delete the ipykernel in your system)
++ $ pip install -r requirements.txt
++ $ python app.py
 
 ## 4. Deployment (Real world Use)
 
-+ [WebApp with Streamlit]()
-+ [WebApp with Flask]()
-
++ google play
++ ios app
 
 ## 5. To improve
 
-+ put link for real world app after deployment in heroku
++ add color
++ fix bugs
 
 ## 6. About Me
 ___
