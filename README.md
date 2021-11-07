@@ -3,16 +3,16 @@
 <img src="/images/cover.png" width="1000" height="300" />
 
 
-In healthcare field diagnose a problem early offer more chance for traitement and guerison in this project we apply machine learning techniques to predict whether a patient will develop diabetes within the next five years. Early detection and diagnosis of diabetes is that the early stages of diabetes are often non-symptomatic. People who are on the path to diabetes (also known as prediabetes) often do not know that they have diabetes until it is too late.
-
+In this small project I used kivy one of the python package use to build multi platform (windows, linux, ios, android ...) application. It still a lot to improve in this game but it is a good start point anabling bigenner to experiment the process of game building end-to-end.
 ## Contents
 
 1. Project Structure
 2. Prosess
 3. How to run
-4. Deployment (Real world Use)
-5. To improve
-6. About Me
+4. Generate apk file for android
+5. Deployment (Real world Use)
+6. To improve
+7. About Me
 
 ## 1. Project Structure
 
@@ -65,17 +65,35 @@ In healthcare field diagnose a problem early offer more chance for traitement an
 + $ pip install -r requirements.txt
 + $ python app.py
 
-## 4. Deployment (Real world Use)
+## 4. Generate apk file for android
+Note - If you are using Linux or Mac. Open up your terminal and directly jump to step number 4
+
+1. Signup on Digital Ocean (https://m.do.co/c/c2cf5bc2a760 - Use this link to get 100$ free)
+2. Create a Droplet
+3. Open up terminal Access Console and login using you One-Time Password
+4. Installing Python and Virtual Environment https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04
+5. Install buildozer - https://buildozer.readthedocs.io/en/latest/installation.html#targeting-android
+6. Install Filezilla ( skip if Linux or Mac) - https://filezilla-project.org/download.php
+7. Connect Filzilla to server ( skip if Linux or Mac)
+8. Upload your kivy folder to enviroments folder ( in linux/mac just go to your kivy folder using terminal)
+9. buildozer init (spec file will be add in the project folder)
+10. buildozer -v android debug (the apk file can be find in the new created bin folder you can rename it as you want )
+11. In case you get error in step 10 reinstall cpython ($ pip install cpython)
+12. Using Filezilla download the apk in your bin directory
+13. Copy this apk file to your phone
+14. Run it. ( You need to enable install apk with unknown sources)
+
+## 5. Deployment (Real world Use)
 
 + google play
 + ios app
 
-## 5. To improve
+## 6. To improve
 
 + add color
 + fix bugs
 
-## 6. About Me
+## 7. About Me
 ___
 
 ### I'm a data scientist, software Engineer. data and technology passionate person, Artificial Intelligence enthusiast 
